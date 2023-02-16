@@ -1,6 +1,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:fragment="common_header(title,links)">
 
+  <!--  layoutMain의 title 삽입 -->
   <title th:replace="${title}">레이아웃 타이틀</title>
 
   <!-- 공통 -->
@@ -8,7 +9,7 @@
   <link rel="shortcut icon" th:href="@{/images/favicon.ico}">
   <script type="text/javascript" th:src="@{/sh/scripts/codebase.js}"></script>
 
-  <!-- 추가 -->
+  <!-- 추가: layoutMain의 link 삽입  -->
   <th:block th:replace="${links}" />
 
 </head>
