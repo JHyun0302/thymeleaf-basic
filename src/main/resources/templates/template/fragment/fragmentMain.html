@@ -8,11 +8,11 @@
 <h1>부분 포함</h1>
 <h2>부분 포함 insert</h2>
 <div th:insert="~{template/fragment/footer :: copy}"></div>
-<!--/*insert: <div> copy내용 삽입 </div>*/-->
+<!--/*insert: <div> ~경로 :: copy 내용(푸터 자리 입니다.) 삽입 </div>*/-->
 
 <h2>부분 포함 replace</h2>
 <div th:replace="~{template/fragment/footer :: copy}"></div>
-<!--/*replace: <div></div>를 copy내용으로 대체*/-->
+<!--/*replace: <div></div>를 copy(푸터 자리 입니다.) 내용으로 대체*/-->
 
 <h2>부분 포함 단순 표현식</h2>
 <div th:replace="template/fragment/footer :: copy"></div>
@@ -22,5 +22,4 @@
 <div th:replace="~{template/fragment/footer :: copyParam ('데이터1', '데이터 2')}"></div>
 </body>
 </html>
-
 <!-- ~{경로 지정 :: fragment 이름}   & ~{경로 지정 :: 메서드 ('파라미터1', '파라미터2') -->
