@@ -24,7 +24,7 @@
         <th>age</th>
         <th>etc</th>
     </tr>
-    <!--    <tr th:each="user, userStat : ${users}">-->
+    <!--    <tr th:each="user, userStat : ${users}"> 두번째(userStat) 생략가능-->
     <tr th:each="user : ${users}">
         <td th:text="${userStat.count}">username</td>
         <td th:text="${user.username}">username</td>
