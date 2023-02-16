@@ -16,6 +16,7 @@
         <td th:text="${userStat.count}">1</td>
         <td th:text="${user.username}">username</td>
         <td>
+<!--            조건에 만족하지 않으면 출력을 안함!-->
             <span th:text="${user.age}">0</span>
             <span th:text="'미성년자'" th:if="${user.age lt 20}"></span>
             <span th:text="'미성년자'" th:unless="${user.age ge 20}"></span>
